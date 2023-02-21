@@ -7,19 +7,17 @@ export const AppHeader = () => {
 		<header className="header">
 			<div className='container header__container'>
 				<div className='headerTop'>
-						<a href='https://www.homebuddy.com/' className='headerTop__logo'>
-							<img
-								src="https://www.homebuddy.com/static/shared1/homebuddy-logo.svg"
-								alt="homebuddy logo"
-								width="163"
-								height="24"
-							/>
-							<small className='headerTop__small'>for homeowners</small>
+						<a href='https://www.homebuddy.com/' className='text-logo' target="_blank" rel="noreferrer">
+								<div class="text-logo__top">
+									HomeBuddy
+									<span class="text-logo__dot">.</span>
+								</div>
+							<small className='text-logo__small'>for homeowners</small>
 						</a>
-						<nav className='menu headerTop__menu'>
-							<ul className='menu__list'>
-								<li className='menu__item'>
-									<a className='menu__anchor' href='#zipCode'>Link to form</a>
+						<nav className='nav'>
+							<ul className='nav__list'>
+								<li className='nav__item'>
+									<a className='nav__anchor' href='#zipCode'>Link to form</a>
 								</li>
 							</ul>
 						</nav>

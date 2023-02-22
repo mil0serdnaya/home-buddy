@@ -3,12 +3,12 @@
 @import '../../assets/styles/common/inputs';
 
 .zipCode {
-  background: $main-blue;
+  background-color: $main-blue;
   border-radius: 24px;
   padding: 24px 24px 48px 24px;
   margin-bottom: 44px;
 
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $xl) {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 44px;
@@ -23,7 +23,7 @@
     line-height: 36px;
     margin-bottom: 15px;
 
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $xl) {
       text-align: center;
       margin-bottom: 32px;
       padding-top: 120px;
@@ -36,7 +36,7 @@
   border-radius: 16px;
   padding: 24px 16px;
 
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $xl) {
     max-width: 978px;
     padding:0;
     margin: 0 auto;
@@ -52,7 +52,7 @@
     display: block;
     margin-bottom: 15px;
 
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $xl) {
       padding-top: 48px;
     }
   }
@@ -76,7 +76,7 @@
   }
 
   &__wrapper {
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $xl) {
       max-width: 320px;
       margin: 0 auto;
       padding-bottom: 48px;

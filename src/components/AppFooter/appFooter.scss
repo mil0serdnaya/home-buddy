@@ -4,7 +4,7 @@
   padding: 24px 24px 44px 16px;
   background-color: $main-blue;
 
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $xl) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,12 +38,12 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $xl) {
       margin-bottom: 0;
       margin-right: 24px;
     }
   }
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $xl) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,6 @@
 }
 
 // Media 
-@media screen and (min-width: $breakpoint) {
+@media screen and (min-width: $xl) {
 
 }

@@ -8,12 +8,45 @@
   padding: 24px 24px 48px 24px;
   margin-bottom: 44px;
 
+  .piggyLabel {
+    border: none;
+    background-color: #fff;
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  &__heading {
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+
+    @media screen and (min-width: $xl) {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+  }
+
   @media screen and (min-width: $xl) {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 44px;
     padding: 24px 24px 80px 24px;
     background-image: url('../../assets/img/zip-bg.png');
+
+    .piggyLabel {
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
   }
 
   &__header {
@@ -40,7 +73,6 @@
     max-width: 978px;
     padding:0;
     margin: 0 auto;
-    margin-top: 188px;
   }
 
   &__label {

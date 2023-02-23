@@ -3,6 +3,10 @@ import "./zipCode.scss";
 export function ZipCode({ openModal = (f) => f }) {
 	return (
 		<section className="zipCode" id="zipCode">
+			<div className="piggyLabel">
+				<span>You will be surprised how affordable gutter guards are!</span>
+			</div>
+			<h2 className='zipCode__heading'>See How Much Gutter Guards Cost In The XX, XXX Area</h2>
 			<form onSubmit={openModal} className="container container_zipCode">
 				<div className="zipCodeForm">
 					<div className="zipCodeForm__wrapper">

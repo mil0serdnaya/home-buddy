@@ -40,12 +40,15 @@
     font-size: $-fs--xxs;
     line-height: $-lh--xxs;
     font-weight: 600;
-    max-width: 565px;
 
     @media (min-width: #{$xxs + 1}) and (max-width: #{$xl - 1}) {
       font-size: func.fluid($-fs--xxs, $-fs--xl, $xxs, $xl);
       line-height: func.fluid($-lh--xxs, $-lh--xl, $xxs, $xl);
 		}
+
+    @media (min-width:  #{$m + 1px}) {
+      max-width: 50%;
+    }
 
     @media (min-width: $xl) {
 			font-size: $-fs--xl;
@@ -65,9 +68,47 @@
 
   &__description {
     font-weight: 500;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 30px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0;
+
+    @media (min-width: #{$xxs + 1}) and (max-width: #{$xl - 1}) {
+      font-size: func.fluid(14px, 23px, $xxs, $xl);
+      line-height: func.fluid(20px, 32px, $xxs, $xl);
+		}
+
+    @media (min-width: $xl) {
+      font-size: 23px;
+      line-height: 32px;
+      margin: 30px 0 0 0;
+		}
+  }
+
+  &__img {
+    position: relative;
+    max-width: unset;
+  
+    &_big {
+      width: 100%;
+      height: auto;
+    }
+  
+    &_sm {
+      width: 102px;
+      height: 39px;
+      position: absolute;
+      right: 8px;
+      bottom: 10px;
+    }
+  
+    figcaption {
+      display: none;
+    }
+
+
+    @media (min-width:  #{$m + 1px}) {
+      max-width: 48%;
+    }
   }
 
   @media (min-width: #{$xxs - 1}) and (max-width: #{$xl - 1}) {
@@ -81,27 +122,6 @@
   @media (min-width:  #{$m + 1px}) {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.headerBottom__img {
-  position: relative;
-
-  &_big {
-    width: 100%;
-    height: auto;
-  }
-
-  &_sm {
-    width: 102px;
-    height: 39px;
-    position: absolute;
-    right: 8px;
-    bottom: 10px;
-  }
-
-  figcaption {
-    display: none;
   }
 }
 
@@ -167,12 +187,10 @@
         transform: scaleX(1);
       }
     }
+
+    @media (min-width: #{$xl}) {
+      padding-top: 16px;
+      padding-bottom: 58px;
+    }
   }
 }
-
-// @media (min-width: #{375px + 1px}) and (max-width: #{$xl - 1}) {
-//   .headerTop {
-//     padding-top: func.fluid(8px, 16px, 375px, $xl);
-//     padding-bottom: func.fluid(28px, 58px, 375px, $xl);
-//   }
-// }

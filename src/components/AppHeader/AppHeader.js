@@ -8,9 +8,9 @@ export const AppHeader = () => {
 			<div className='container header__container'>
 				<div className='headerTop'>
 						<a href='https://www.homebuddy.com/' className='text-logo' target="_blank" rel="noreferrer">
-								<div class="text-logo__top">
+								<div className="text-logo__top">
 									HomeBuddy
-									<span class="text-logo__dot">.</span>
+									<span className="text-logo__dot">.</span>
 								</div>
 							<small className='text-logo__small'>for homeowners</small>
 						</a>

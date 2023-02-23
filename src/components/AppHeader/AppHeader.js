@@ -41,10 +41,17 @@ export const AppHeader = () => {
 						</p>
 					</h1>
 					<div className='headerBottom__img'>
-						<img src={header} alt="house" className='headerBottom__img_big' />
-						<a href='https://google.com' rel="noreferrer" target="_blank">
-							<img src={nbc} alt="nbc" className='headerBottom__img_sm' />
-						</a>
+						<figure>
+							<img sizes="(max-width: 375px) 343px, 581px" src={header} alt="house" className='headerBottom__img_big' />
+							<a href='https://google.com' rel="noreferrer" target="_blank">
+								<img src={nbc} alt="nbc logo" className='headerBottom__img_sm' />
+							</a>
+							<figcaption className='visually-hidden'>
+								The facade, which depicts a part of a brick wall connected to
+								the siding. A coniferous tree grows against the background of
+								the wall
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>

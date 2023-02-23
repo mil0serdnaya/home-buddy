@@ -21,7 +21,12 @@
   padding-top: 8px;
   padding-bottom: 28px;
 
-  @media (min-width:  #{$m + 1px}) {
+  @media (min-width: #{$xxs - 1}) and (max-width: #{$xl - 1}) {
+    padding-top: func.fluid(8px, 16px, $xxs, $xl);
+    padding-bottom: func.fluid(28px, 58px, $xxs, $xl);
+  }
+
+  @media (min-width: #{$xl}) {
     padding-top: 16px;
     padding-bottom: 58px;
   }
@@ -30,11 +35,22 @@
 .headerBottom {
   color: #fff;
   padding-bottom: 52px;
-  
+
   &__text {
-    font-size: 23px;
-    line-height: 28px;
+    font-size: $-fs--xxs;
+    line-height: $-lh--xxs;
     font-weight: 600;
+    max-width: 565px;
+
+    @media (min-width: #{$xxs + 1}) and (max-width: #{$xl - 1}) {
+      font-size: func.fluid($-fs--xxs, $-fs--xl, $xxs, $xl);
+      line-height: func.fluid($-lh--xxs, $-lh--xl, $xxs, $xl);
+		}
+
+    @media (min-width: $xl) {
+			font-size: $-fs--xl;
+			line-height: $-lh--xl;
+		}
 
     &_green {
       font-weight: 600;
@@ -48,48 +64,19 @@
   }
 
   &__description {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 16px 0;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    margin: 30px 0 0 0;
   }
 
-  &__text {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 48px;
-    max-width: 565px;
-    padding-top: 19px;
+  @media (min-width: #{$xxs - 1}) and (max-width: #{$xl - 1}) {
+    padding-bottom: func.fluid(52px, 101px, $xxs, $xl);
+  }
 
-    &_green { 
-      line-height: 36px;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      }
-    }
-
-    &__img {
-      &_sm {
-        width: 127px;
-        height: 48px;
-      }
-    }
-
-    &__description {
-      font-weight: 500;
-      font-size: 23px;
-      line-height: 32px;
-      margin: 30px 0 0 0;
-    }
-
-    @media (min-width: #{$xxs - 1}) and (max-width: #{$xl - 1}) {
-      padding-bottom: func.fluid(52px, 101px, $xxs, $xl);
-		}
-
-		@media (min-width: #{$xl}) {
-			padding-bottom: 101px;
-		}
+  @media (min-width: #{$xl}) {
+    padding-bottom: 101px;
+  }
 
   @media (min-width:  #{$m + 1px}) {
     display: flex;
@@ -110,7 +97,11 @@
     height: 39px;
     position: absolute;
     right: 8px;
-    bottom: 8px;
+    bottom: 10px;
+  }
+
+  figcaption {
+    display: none;
   }
 }
 

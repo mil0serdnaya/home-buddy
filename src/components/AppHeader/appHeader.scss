@@ -21,7 +21,7 @@
   padding-top: 8px;
   padding-bottom: 28px;
 
-  @media (min-width: $m) {
+  @media (min-width:  #{$m + 1px}) {
     padding-top: 16px;
     padding-bottom: 58px;
   }
@@ -29,6 +29,7 @@
 
 .headerBottom {
   color: #fff;
+  padding-bottom: 52px;
   
   &__text {
     font-size: 23px;
@@ -53,11 +54,6 @@
     line-height: 20px;
     margin: 16px 0;
   }
-
-  @media (min-width: $m) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
 
   &__text {
     font-weight: 600;
@@ -86,6 +82,18 @@
       line-height: 32px;
       margin: 30px 0 0 0;
     }
+
+    @media (min-width: #{$xxs - 1}) and (max-width: #{$xl - 1}) {
+      padding-bottom: func.fluid(52px, 101px, $xxs, $xl);
+		}
+
+		@media (min-width: #{$xl}) {
+			padding-bottom: 101px;
+		}
+
+  @media (min-width:  #{$m + 1px}) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -111,8 +119,13 @@
 
   &__top {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 24px;
+
+    @media (min-width:  #{$m + 1px}) {
+      font-size: 30px;
+      line-height: 32px;
+    }
   }
 
   &__dot {
@@ -121,11 +134,16 @@
 
   &__small {
     font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 9px;
+    line-height: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     opacity: 0.8;
+
+    @media (min-width:  #{$m + 1px}) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }
 

@@ -17,7 +17,7 @@ export const AppHeader = () => {
 						<nav className='nav'>
 							<ul className='nav__list'>
 								<li className='nav__item'>
-									<a className='nav__anchor' href='#zipCode'>Link to form</a>
+									<a className='nav__anchor anchor' href='#zipCode'>Link to form</a>
 								</li>
 							</ul>
 						</nav>

@@ -3,27 +3,27 @@ import "./appFooter.scss";
 export function AppFooter() {
 	return (
 		<footer className="footer">
-			<a className="footer__logo" href='https://www.homebuddy.com/'>
-				<img
-					src="https://www.homebuddy.com/static/shared1/homebuddy-logo.svg"
-					alt="homebuddy logo"
-				/>
+			<a href='https://www.homebuddy.com/' className='text-logo' target="_blank" rel="noreferrer">
+				<div className="text-logo__top">
+					HomeBuddy
+					<span className="text-logo__dot">.</span>
+				</div>
 			</a>
 			<ul className="footerList">
 				<li className="footerList__item">
-					<a href="/">Terms of Use</a>
+					<a href="/" className="anchor">Terms of Use</a>
 				</li>
 				<li className="footerList__item">
-					<a href="/">Privacy Policy</a>
+					<a href="/" className="anchor">Privacy Policy</a>
 				</li>
 				<li className="footerList__item">
-					<a href="/">Cookie Policy</a>
+					<a href="/" className="anchor">Cookie Policy</a>
 				</li>
 				<li className="footerList__item">
-					<a href="/">Do Not Sell My Personal Information</a>
+					<a href="/" className="anchor">Do Not Sell My Personal Information</a>
 				</li>
 				<li className="footerList__item">
-					<a href="/">Contact us</a>
+					<a href="/" className="anchor">Contact us</a>
 				</li>
 			</ul>
 		</footer>

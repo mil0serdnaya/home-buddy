@@ -25,6 +25,7 @@ input {
   padding: 20px 16px;
   border-radius: 4px;
   outline: none;
+  transition: .15s;
 
   &:hover {
     color: $main-blue;
@@ -42,6 +43,7 @@ input {
       font-size: 11px;
       line-height: 13px;
       color: $main-blue;
+      transition: .15s;
     }
 
     &::placeholder {

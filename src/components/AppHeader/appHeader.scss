@@ -162,35 +162,10 @@
   padding-top: 8px;
 
   &__anchor {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
     text-align: right;
-    color: #fff;
-    position: relative;
-
-    &::before {
-      background-color: #fa8c16;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 1px;
-      left: 0;
-      position: absolute;
-      transform: scaleX(0);
-      transition: transform .3s ease;
-      width: 100%;
-    }
-
-    &:hover {
-      &::before {
-        transform: scaleX(1);
-      }
-    }
 
     @media (min-width: #{$xl}) {
       padding-top: 16px;
-      padding-bottom: 58px;
     }
   }
 }

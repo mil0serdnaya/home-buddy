@@ -24,8 +24,6 @@ Create a page with a submit modal form that contains two steps. The appearance s
 - The responsive layout should not break on other devices like tablets.
 - Please use BEM methodology, with camel case (camelCase) style to name classes.
 - Preprocessor should be used for styles, preferably SASS. We use SCSS in our projects.
-- Please use Vanilla JS for modal form and other interactive actions.
-- Browser support: Chrome(three latest versions), FF(three latest versions), Safari from v12.
 
 Important interactive actions:
 
@@ -38,15 +36,8 @@ Modal form behaviour:
 
 - Modal form opens by clicking the [Get estimate] button.
 - Modal form closes by clicking the cross icon on the top right corner.
-- Modal form contains two steps. (You can feel free to animate steps transition if you want to.)
+- Modal form contains two steps.
 - Modal form contains progress bar. (On first step it’s filled 50% width, on second - 100%)
 - When the [Next] button is pressed the first step translates into the second one.
 - On the second step should be displayed an option that was chosen in the previous step.
 - When the [Submit] button is pressed on the second step modal form closes.
-
-If you feel comfortable, and would like to show additional skills you can:
-
-- Make form validation
-- Animate form and make smooth steps transition
-- Consider using React
-

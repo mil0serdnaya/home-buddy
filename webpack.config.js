@@ -1,5 +1,6 @@
 const path = require('path');
 const port = process.env.PORT || 3000;
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
@@ -27,12 +28,13 @@ if (process.env.SERVE) {
 
 module.exports = {
   mode,
-  target,
+  target: 'web',
   plugins,
   devtool: 'source-map',
   entry: './src/index.js',
   devServer: {
     static: './build',
+    hot: false,
     liveReload: true,
     open: true,
     port

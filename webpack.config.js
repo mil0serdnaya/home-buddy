@@ -1,8 +1,8 @@
 const path = require('path');
+const port = process.env.PORT || 3000;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const port = process.env.PORT || 3000;
 
 let mode = 'development';
 let target = 'web';
@@ -25,10 +25,6 @@ if (process.env.SERVE) {
   plugins.push(new ReactRefreshWebpackPlugin());
 }
 
-if (process.env.SERVE) {
-  plugins.push(new ReactRefreshWebpackPlugin());
-}
-
 module.exports = {
   mode,
   target,
@@ -37,7 +33,8 @@ module.exports = {
   entry: './src/index.js',
   devServer: {
     static: './build',
-    hot: true,
+    liveReload: true,
+    open: true,
     port
   },
 

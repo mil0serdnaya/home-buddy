@@ -8,24 +8,14 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "",
-    "build": "",
+    "start": "cross-env SERVE=true webpack serve",
+    "build": "webpack",
+    "build-prod": "webpack --mode=production",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "runtime": "automatic"
-        }
-      ]
+      "react-app"
     ]
   },
   "devDependencies": {
@@ -35,6 +25,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "github:pmmmwh/react-refresh-webpack-plugin",
     "@sass-fairy/math": "^1.0.3",
     "babel-loader": "^9.1.2",
+    "babel-preset-react-app": "^10.0.1",
     "browserslist": "^4.21.5",
     "classnames": "^2.3.2",
     "cross-env": "^7.0.3",

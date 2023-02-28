@@ -38,13 +38,11 @@ function App() {
 	const onYes = (event) => {
 		event.stopPropagation();
 		setAnswer(true);
-		console.log(answer)
 	};
 
 	const onNo = (event) => {
 		event.stopPropagation();
 		setAnswer(false);
-		console.log(answer)
 	};
 
 	return (

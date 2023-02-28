@@ -52,6 +52,7 @@
       background-image: url('../../assets/img/star.svg');
       position: relative;
       padding: 20px 0 20px 150px;
+      background-size: 53px;
 
       &::before {
         content: '';
@@ -66,9 +67,10 @@
 
       @media screen and (min-width: $xl) {
         padding: 0;
+        margin-right: 40px;
 
         span {
-          padding-top: 100px;
+          padding-top: 94px;
         }
 
         &::before {
@@ -84,7 +86,9 @@
 }
 
 .piggyLabel {
-  padding: 10px 10px 10px 40px;
+  padding: 8px 10px 8px 40px;
+  font-size: 16px;
+  line-height: 24px;
   border: 1px solid #FA8C16;
   background: #F5F6FE;
   margin-bottom: 24px;

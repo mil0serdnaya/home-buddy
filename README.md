@@ -10,8 +10,7 @@ Runs the app in the development mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
 ### `npm run deploy`
 Build and publish the app to github pages
@@ -20,7 +19,7 @@ What should you do:
 
 Create a page with a submit modal form that contains two steps. The appearance should be identical to the Figma design. [https://www.figma.com/file/pCBH66BFKgZEpKUpyp4m7K/Test-Task?node-id=0%3A1]
 
-- Mobile first approach, width from 320px.
+- Mobile first approach, width from 375px.
 - The responsive layout should not break on other devices like tablets.
 - Please use BEM methodology, with camel case (camelCase) style to name classes.
 - Preprocessor should be used for styles, preferably SASS. We use SCSS in our projects.

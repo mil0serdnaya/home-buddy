@@ -16,7 +16,6 @@ export function ZipCode({ openModal = (f) => f }) {
 								className="input"
 								type="text"
 								required={true}
-								pattern="\d{4,6}"
 								minLength={4}
 								maxLength={6}
 								placeholder="  Enter ZIP Code"

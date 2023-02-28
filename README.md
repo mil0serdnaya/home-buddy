@@ -23,7 +23,6 @@ Create a page with a submit modal form that contains two steps. The appearance s
 - The responsive layout should not break on other devices like tablets.
 - Please use BEM methodology, with camel case (camelCase) style to name classes.
 - Preprocessor should be used for styles, preferably SASS. We use SCSS in our projects.
-- Please use Vanilla JS for modal form and other interactive actions.
 
 Important interactive actions:
 

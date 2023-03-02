@@ -5,8 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
-let mode = 'development';
-let target = 'web';
+// Development mode, maximum build speed, low application performance
+let mode = 'development'; 
+// Browserslist is not used in development mode
+let target = 'web'; 
 
 if (process.env.NODE_ENV === 'production') {
   mode = 'production';
@@ -60,6 +62,8 @@ module.exports = {
         ],
       },
       {
+        // In production mode images up to 8kb in size will be embedded in the code
+        // In development mode all images will be placed in build/assets
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: mode === 'production' ? 'asset' : 'asset/resource',
       },
